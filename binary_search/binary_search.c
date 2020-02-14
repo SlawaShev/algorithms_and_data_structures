@@ -1,5 +1,7 @@
 #include "stdio.h"
 
+//Function gets pointer to array, number that we need to find and length of array.
+//It returns number position if array has number or -1 if array hasn't
 int binary_search(int array[], int num, int length) {
 	int high = length - 1;
 	int low = 0;

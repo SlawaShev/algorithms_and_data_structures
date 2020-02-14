@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+#That function gets sorted list and value that position we need to find.
+#It returns position of value or None if list has not that value.
 def binary_search(input_list, value):
     low = 0
     high = len(input_list) - 1

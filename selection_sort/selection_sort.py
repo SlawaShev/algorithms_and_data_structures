@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import random
 
+#That function gets list as parameter and returns ascending sorted list with selection sort
 def selection_sort_ascending(list):
     for i in range(0, len(list)):
         min_idx = i
@@ -12,6 +13,7 @@ def selection_sort_ascending(list):
         list[min_idx] = tmp
     return list
 
+#That function gets list as parameter and returns descending sorted list with selection sort
 def selection_sort_descending(list):
     for i in range(0, len(list)):
         max_idx = i
@@ -25,6 +27,7 @@ def selection_sort_descending(list):
 
 list = []
 length = int(input("Input length of array "))
+#Offering to user to choose direction of sorting
 order = raw_input("Input order ascending or discending ")
 for counter in range(0, length):
     list.append(random.randint(0, 10000))
