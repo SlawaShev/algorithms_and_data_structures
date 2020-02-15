@@ -42,7 +42,7 @@ void selection_sort_descending(int *array, int length) {
 void array_random_value(int *array, int length) {
 	srand(time(NULL));
 	for (int i = 0; i < length; i++) {
-		array[i] = rand() % 100;
+		array[i] = rand() % 100000;
 	}
 	return;
 }
@@ -73,5 +73,6 @@ int main() {
 	selection_sort_descending(array, length);
 	printf("\nArray descending: ");
 	print_array(array, length);
+	free(array);
 	return 0;
 }
