@@ -1,3 +1,5 @@
+import random
+
 def quicksort(list):
     if len(list) < 2:
         return list
@@ -13,5 +15,10 @@ def quicksort(list):
 
         return quicksort(less) + [pivot] + quicksort(greater)
 
-array = [1, 6, 3, 8, 33, 1, 4, 2, 854, 3, 4, 44]
-print(quicksort(array))
+list = []
+length = int(input("Input length of array "))
+for counter in range(0, length):
+    list.append(random.randint(0, 100000))
+sorted_array = quicksort(list)
+#print("Initial array is " + str(list))
+#print("Sorted array is " + str(sorted_array))
